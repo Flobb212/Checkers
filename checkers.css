@@ -1,0 +1,48 @@
+header{
+  background: blue;
+  margin-top: 5px;
+}
+
+body{
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title{
+  font-size: 48;
+  text-align: center;
+}
+
+main{
+  background: brown;
+}
+
+.redPiece{
+  height: 60px;
+  width: 60px;
+}
+
+.blackPiece{
+  height: 60px;
+  width: 60px;
+}
+
+.board{
+  border-spacing: 0px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.black{
+  background: peru;
+  width: 90px;
+  height: 90px;
+}
+
+.white{
+  background-color: white;
+  width: 90px;
+  height: 90px;
+}
