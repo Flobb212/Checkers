@@ -2,14 +2,38 @@ var http   = require('http');
 var url    = require('url');
 var fs     = require('fs');
 
-http.createServer(function(request, response)
+var server = http.createServer(function(request, response)
 {
-  pathName  = url.parse(request.url).pathname;
-
-  fs.readFile('login.html', function(err, data)
+  if(request.url === '')
   {
-    response.writeHead(200);
-    response.write(data);
-    response.end();
-  })
+    fs.readFile('login.html', function(err, data)
+    {
+        response.writeHead(200, {'Content-Type':'text/html'});
+        response.write(data);
+        response.end();
+    })
+  }
+  else if(request.url === '/checkersGame.html')
+  {
+    fs.readFile('checkersGame.html', function(err, data)
+    {
+        response.writeHead(200, {'Content-Type':'text/html'});
+        response.write(data);
+        response.end();
+    })
+  }
+  else if (request.url === '/styles/styles.css')
+  {
+    fs.readFile('styles/styles.css', function(err, page)
+    {
+      res.writeHead(200, {'Content-Type': 'text/css'});
+      var fileContents = fs.readFileSync('/checkers.css', {encoding: 'utf8'});
+      response.write(fileContents);
+      res.end();
+    });
+  }
+
 });
+
+server.listen(80);
+console.log('Server running on port: 80');
