@@ -13,12 +13,21 @@
     </div>
 
     <div class='guestLogin'>
-      <button id="guestButton">Proceed as guest</button>
+      <button id="guestButton" onClick="window.location.href = 'checkersGame.html'">Proceed as guest</button>
     </div>
 
     <div class='accountLogin'>
-      <input id="username" type="text"></input>
-      <input id="password" type="text"></input>
+      <table id="loginBoxes">
+        <tr>
+          <td><label>Username:</label></td>
+          <td><input id="username" type="text"></input></td>
+        </tr>
+        <tr>
+          <td><label>Password:</label></td>
+          <td><input id="password" type="text"></input></td>
+        </tr>
+      </table>
+
       <button id="accountButton" onClick="window.location.href = 'checkersGame.html'">Login</button>
     </div>
 

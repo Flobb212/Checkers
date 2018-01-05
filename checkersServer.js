@@ -12,7 +12,7 @@ extensions =
 };
 
 //Create server
-http.createServer(assembler).listen(3000, function()
+http.createServer(assembler).listen(80, function()
 {
   console.log('Running on all engines Captain')
 });
@@ -33,7 +33,7 @@ function getFile(filePath, response, fType)
   {
 		if(exists)
     {
-			fs.readFile(filePath, function(err,contents)
+			fs.readFile(filePath, function(err, contents)
       {
 				if(!err)
         {
