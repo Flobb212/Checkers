@@ -8,9 +8,21 @@
 
 <body>
   <main>
-    <p>Welcome</p>
-    <input id="username" type="text"></input>
-    <button onClick="window.location.href = 'checkersGame.html'">Login</button>
+    <div>
+      <p>Welcome</p>
+    </div>
+
+    <div class='guestLogin'>
+      <button id="guestButton">Proceed as guest</button>
+    </div>
+
+    <div class='accountLogin'>
+      <input id="username" type="text"></input>
+      <input id="password" type="text"></input>
+      <button id="accountButton" onClick="window.location.href = 'checkersGame.html'">Login</button>
+    </div>
+
+
   </main>
 </body>
 

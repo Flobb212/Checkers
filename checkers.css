@@ -1,3 +1,4 @@
+/* Constant display */
 header{
   background: blue;
   margin-top: 5px;
@@ -9,15 +10,54 @@ body{
   margin: 0 auto;
 }
 
+main{
+  background: brown;
+}
+
 .title{
   font-size: 48;
   text-align: center;
 }
 
-main{
-  background: brown;
+
+
+/* Login page*/
+.guestLogin{
+  float: left;
+  background: green;
+  width: 50%;
+  height: 200px;
 }
 
+#guestButton{
+
+}
+
+.accountLogin{
+  background: yellow;
+  height: 200px;
+  text-align: center;
+}
+
+#username{
+  margin: auto;
+  position: absolute;
+}
+
+#password{
+  margin: auto;
+  position: relative;
+  top: 30px;
+}
+
+#accountButton{
+  margin: auto;
+  position: relative;
+  top: 70px;
+}
+
+
+/* Game page */
 .redPiece{
   height: 60px;
   width: 60px;
