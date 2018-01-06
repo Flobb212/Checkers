@@ -27,12 +27,7 @@ main{
   background: green;
   width: 50%;
   height: 200px;
-}
-
-#guestButton{  
-  margin-left: 20%;
-  margin-top: 20%;
-  font-size: 24px;
+  text-align: center;
 }
 
 .accountLogin{
@@ -43,14 +38,36 @@ main{
 
 #loginBoxes{
   margin: auto;
-  padding-top: 50px;
+  padding-top: 30px;
+}
+
+#guestButton{
+  margin: auto;
+  position: relative;
+  top: 10px;
+  display: inline-block;
 }
 
 #accountButton{
   margin: auto;
   position: relative;
-  top: 20px;
+  top: 10px;
   display: inline-block;
+}
+
+
+/* Lobby page */
+.lobbyMembers{
+  float: left;
+  background: green;
+  width: 50%;
+  height: 200px;
+}
+
+.accountDetails{
+  background: yellow;
+  height: 200px;
+  text-align: center;
 }
 
 
