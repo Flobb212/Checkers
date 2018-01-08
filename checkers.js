@@ -1,11 +1,18 @@
 //Login functions
 localStorage.usr = "guest001";
-var usrnm = "unset";
+var usrnm;
 
-function signUp()
+function signUp(form)
 {
-  //usrnm = document.getElementByID("username");
-  window.location.href = "lobby.html";
+  if(form.newUsername.value == "myuserid" && form.newPassword.value == "mypswrd")
+  {
+    usrnm = form.newUsername.value;
+    window.open('lobby.html')
+  }
+ else
+ {
+   alert("Error Password or Username");
+ }
 }
 
 function guestLogin()
@@ -17,13 +24,20 @@ function guestLogin()
 
 function memberLogin()
 {
-  //usrnm = document.getElementByID("username");
-  window.location.href = "lobby.html";
+  if(form.newUsername.value == "myuserid" && form.newPassword.value == "mypswrd")
+  {
+    usrnm = form.newUsername.value;
+    window.open('lobby.html')
+  }
+ else
+ {
+   alert("Error Password or Username");
+ }
 }
 
 function getUsr()
 {
-  document.getElementById('lobbyUser').value = usrnm;
+  document.getElementById('lobbyUser').value = usrnm.innerHTML;
 }
 
 

@@ -36,11 +36,6 @@ main{
   text-align: center;
 }
 
-#loginBoxes{
-  margin: auto;
-  padding-top: 30px;
-}
-
 #guestButton{
   margin: auto;
   position: relative;
