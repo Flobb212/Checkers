@@ -1,29 +1,29 @@
 //Login functions
 localStorage.usr = "guest001";
-var usrnm;
+var usrnm = "unset";
 
 function signUp()
 {
   //usrnm = document.getElementByID("username");
-  window.location.href = "localhost/lobby.html";
+  window.location.href = "lobby.html";
 }
 
 function guestLogin()
 {
   //usrnm = document.getElementByID("username");
-  //usrnm.innerHTML = "Guest";
-  window.location.href = "localhost/lobby.html";
+  usrnm = "Guest";
+  window.location.href = "lobby.html";
 }
 
 function memberLogin()
 {
   //usrnm = document.getElementByID("username");
-  window.location.href = "localhost/lobby.html";
+  window.location.href = "lobby.html";
 }
 
 function getUsr()
 {
-  document.getElementById('lobbyUser').innerHTML = usrnm.innerHTML;
+  document.getElementById('lobbyUser').value = usrnm;
 }
 
 
