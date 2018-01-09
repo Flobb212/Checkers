@@ -21,6 +21,23 @@ if(passwordList.length == 0)
   localStorage["passwordList"] = JSON.stringify(passwordList);
 }
 
+
+// Create new profile
+function signUp(form)
+{
+  if(form.newUsername.value == "" || form.newPassword.value == "")
+  {
+    alert("Please enter a valid Username and Password");
+  }
+ else
+ {
+   addUsername(form.newUsername.value);
+   addPassword(form.newPassword.value);
+   localStorage.usr = form.newUsername.value;
+   window.location.href = "lobby.html";
+ }
+}
+
 function addUsername(thisName)
 {
   console.log(namesList);
@@ -30,34 +47,23 @@ function addUsername(thisName)
   console.log(namesList);
 }
 
-
-
-
-function signUp(form)
+function addPassword(thisPw)
 {
-  if(form.newUsername.value == "" || form.newPassword.value == "")
-  {
-    alert("Please enter a valid Password or Username");
-  }
- else
- {
-   addUsername(form.newUsername.value)
-   localStorage.usr = form.newUsername.value;
-   window.location.href = "lobby.html";
- }
+  console.log(passwordList);
+  var temp = JSON.parse(localStorage["passwordList"]);
+  temp.push(thisPw);
+  localStorage["passwordList"] = JSON.stringify(temp);
+  console.log(passwordList);
 }
 
-
-
+// Login as default guest
 function guestLogin()
 {
   localStorage.usr = "Guest001";
   window.location.href = "lobby.html";
 }
 
-
-
-
+// Check if profile exists currently
 function memberLogin(form)
 {
   var valid = false;
@@ -67,7 +73,7 @@ function memberLogin(form)
   {
     if(form.oldUsername.value == namesList[i])
     {
-      valid = true;      
+      valid = true;
       index = i;
       break;
     }
@@ -75,6 +81,7 @@ function memberLogin(form)
 
   if(valid)
   {
+
     if(form.oldPassword.value == passwordList[index])
     {
       localStorage.usr = form.oldUsername.value;
@@ -91,10 +98,11 @@ function memberLogin(form)
   }
 }
 
+// Get the username via the login used
 function getUsr()
 {
 
-  document.getElementById('lobbyUser').innerHTML = localStorage.usr;
+  document.getElementById('lobbyUser').innerHTML = "Username: " + localStorage.usr;
 }
 
 

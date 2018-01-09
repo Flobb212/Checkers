@@ -36,27 +36,18 @@ main{
   text-align: center;
 }
 
-#guestButton{
-  margin: auto;
-  position: relative;
-  top: 10px;
-  display: inline-block;
-}
-
-#accountButton{
-  margin: auto;
-  position: relative;
-  top: 10px;
-  display: inline-block;
-}
-
-
 /* Lobby page */
 .lobbyMembers{
   float: left;
   background: green;
   width: 50%;
   height: 200px;
+}
+
+#head{
+  font-size: 24;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .accountDetails{
