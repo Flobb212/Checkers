@@ -1,5 +1,8 @@
 // Login functions
 localStorage.usr;
+localStorage.played;
+localStorage.won;
+localStorage.lost;
 
 // Create new profile
 function signUp(form)
@@ -31,11 +34,8 @@ function memberLogin(form)
 
   for(var i = 0; i < profList.length; i++)
   {
-    console.log(form.oldUsername.value );
-      console.log(profList[i]);
     if(form.oldUsername.value == profList[i].username)
     {
-
       valid = true;
       index = i;
       break;
@@ -44,12 +44,13 @@ function memberLogin(form)
 
   if(valid)
   {
-
     if(form.oldPassword.value == profList[index].password)
     {
-      console.log(profList[index].username);
       localStorage.usr = profList[index].username;
-      console.log(localStorage.usr);
+      localStorage.played = profList[index].gamesPlayed;
+      localStorage.won = profList[index].gamesWon;
+      localStorage.lost = profList[index].gamesLost;
+
       window.location.href = "lobby.html";
     }
     else
@@ -66,7 +67,10 @@ function memberLogin(form)
 // Get the username via the login used
 function getUsr()
 {
-  document.getElementById('lobbyUser').innerHTML = "Username: " + localStorage.usr;
+  document.getElementById('lobbyUser').innerHTML = localStorage.usr;
+  document.getElementById('plays').innerHTML = localStorage.played;
+  document.getElementById('wins').innerHTML = localStorage.won;
+  document.getElementById('losses').innerHTML = localStorage.lost;
 }
 
 
