@@ -1,26 +1,5 @@
 // Login functions
 localStorage.usr;
-var namesList = JSON.parse(localStorage["namesList"]);
-var passwordList = JSON.parse(localStorage["passwordList"]);
-
-if(namesList.length == 0)
-{
-  namesList[0] = "u0";
-  namesList[1] = "u1";
-  namesList[2] = "u2";
-
-  localStorage["namesList"] = JSON.stringify(namesList);
-}
-
-if(passwordList.length == 0)
-{
-  passwordList[0] = "p0";
-  passwordList[1] = "p1";
-  passwordList[2] = "p2";
-
-  localStorage["passwordList"] = JSON.stringify(passwordList);
-}
-
 
 // Create new profile
 function signUp(form)
@@ -31,29 +10,10 @@ function signUp(form)
   }
  else
  {
-   addUsername(form.newUsername.value);
-   addPassword(form.newPassword.value);
+   createProfile(form.newUsername.value, form.newPassword.value);
    localStorage.usr = form.newUsername.value;
    window.location.href = "lobby.html";
  }
-}
-
-function addUsername(thisName)
-{
-  console.log(namesList);
-  var temp = JSON.parse(localStorage["namesList"]);
-  temp.push(thisName);
-  localStorage["namesList"] = JSON.stringify(temp);
-  console.log(namesList);
-}
-
-function addPassword(thisPw)
-{
-  console.log(passwordList);
-  var temp = JSON.parse(localStorage["passwordList"]);
-  temp.push(thisPw);
-  localStorage["passwordList"] = JSON.stringify(temp);
-  console.log(passwordList);
 }
 
 // Login as default guest
@@ -69,10 +29,13 @@ function memberLogin(form)
   var valid = false;
   var index;
 
-  for(var i = 0; i < namesList.length; i++)
+  for(var i = 0; i < profList.length; i++)
   {
-    if(form.oldUsername.value == namesList[i])
+    console.log(form.oldUsername.value );
+      console.log(profList[i]);
+    if(form.oldUsername.value == profList[i].username)
     {
+
       valid = true;
       index = i;
       break;
@@ -82,9 +45,11 @@ function memberLogin(form)
   if(valid)
   {
 
-    if(form.oldPassword.value == passwordList[index])
+    if(form.oldPassword.value == profList[index].password)
     {
-      localStorage.usr = form.oldUsername.value;
+      console.log(profList[index].username);
+      localStorage.usr = profList[index].username;
+      console.log(localStorage.usr);
       window.location.href = "lobby.html";
     }
     else
@@ -101,7 +66,6 @@ function memberLogin(form)
 // Get the username via the login used
 function getUsr()
 {
-
   document.getElementById('lobbyUser').innerHTML = "Username: " + localStorage.usr;
 }
 
