@@ -1,4 +1,4 @@
-//Login functions
+// Login functions
 localStorage.usr;
 var namesList = JSON.parse(localStorage["namesList"]);
 var passwordList = JSON.parse(localStorage["passwordList"]);
@@ -47,23 +47,48 @@ function signUp(form)
  }
 }
 
+
+
 function guestLogin()
 {
   localStorage.usr = "Guest001";
   window.location.href = "lobby.html";
 }
 
+
+
+
 function memberLogin(form)
 {
-  if(form.oldUsername.value == "myuserid" && form.oldPassword.value == "mypswrd")
+  var valid = false;
+  var index;
+
+  for(var i = 0; i < namesList.length; i++)
   {
-    localStorage.usr = form.oldUsername.value;
-    window.location.href = "lobby.html";
+    if(form.oldUsername.value == namesList[i])
+    {
+      valid = true;      
+      index = i;
+      break;
+    }
   }
- else
- {
-   alert("Incorrect username or password entered");
- }
+
+  if(valid)
+  {
+    if(form.oldPassword.value == passwordList[index])
+    {
+      localStorage.usr = form.oldUsername.value;
+      window.location.href = "lobby.html";
+    }
+    else
+    {
+      alert("Incorrect password entered");
+    }
+  }
+  else
+  {
+    alert("Incorrect username entered");
+  }
 }
 
 function getUsr()
@@ -73,7 +98,7 @@ function getUsr()
 }
 
 
-//AJAX
+// AJAX
 function doAJAX(url, cFunction)
 {
   var xhttp;
