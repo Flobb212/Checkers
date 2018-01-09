@@ -13,8 +13,11 @@ function signUp(form)
   }
  else
  {
-   createProfile(form.newUsername.value, form.newPassword.value);
+   createProfile(form.newUsername.value, form.newPassword.value, 0, 0, 0);
    localStorage.usr = form.newUsername.value;
+   localStorage.played = 0;
+   localStorage.won = 0;
+   localStorage.lost = 0;
    window.location.href = "lobby.html";
  }
 }
@@ -23,6 +26,9 @@ function signUp(form)
 function guestLogin()
 {
   localStorage.usr = "Guest001";
+  localStorage.played = 0;
+  localStorage.won = 0;
+  localStorage.lost = 0;
   window.location.href = "lobby.html";
 }
 
@@ -75,22 +81,19 @@ function getUsr()
 
 
 // AJAX
-function doAJAX(url, cFunction)
+function doAJAX(file)
 {
-  var xhttp;
-  xhttp=new XMLHttpRequest();
-  xhttp.onreadystatechange = function()
+  var call;
+  call = new XMLHttpRequest();
+  
+  call.onreadystatechange = function()
   {
     if (this.readyState == 4 && this.status == 200)
     {
-      cFunction(this);
+      document.getElementById("AJAXCall").innerHTML = call.responseText;
     }
   };
-  xhttp.open("GET", url, true);
-  xhttp.send();
-}
 
-function myFunction(xhttp)
-{
-  document.getElementById("demo").innerHTML = xhttp.responseText;
+  call.open("GET", file, true);
+  call.send();
 }
