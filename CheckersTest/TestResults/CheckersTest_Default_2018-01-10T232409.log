@@ -1,0 +1,102 @@
+﻿2018-01-10T23:24:09.8059191+00:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-01-10T23:24:09.8794715+00:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-01-10T23:24:09.8799724+00:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Lobb\Desktop\Checkers\CheckersTest\bin\Debug\CheckersTest.dll
+2018-01-10T23:24:09.8804730+00:00;VSTestExecutionThread;Info;Profile: Default
+2018-01-10T23:24:16.9952263+00:00;Thread#7;Info;Discovering target: Default
+2018-01-10T23:24:16.9962172+00:00;Thread#7;Info;Discovering tests from assembly: C:\Users\Lobb\Desktop\Checkers\CheckersTest\bin\Debug\CheckersTest.dll
+Appdomain Disposed
+Test Suite Dump
+#0: CheckersTest/Default - 
+#1: Default - 
+#2: CheckersTest - 
+#3: SpecFlowFeatureLogin - 
+#4: Guest Login - TestAssembly:CheckersTest/Feature:SpecFlowFeatureLogin/Scenario:Guest+Login
+#5: Account Login - TestAssembly:CheckersTest/Feature:SpecFlowFeatureLogin/Scenario:Account+Login
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for CheckersTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Lobb\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.6.3\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I am on the login page
+Thread#0:T:Not on Login page
+Thread#0:T:done: StepDefinition.GivenIAmOnTheLoginPage() (9.8s)
+Thread#0:B:When I press procede as guest
+Thread#0:T:pending: StepDefinition.WhenIPressProcedeAsGuest()
+Thread#0:B:Then the lobby page should load
+Thread#0:T:skipped because of previous errors
+Thread#0:T:Pending: One or more step definitions are not implemented yet.
+Thread#0:T:  StepDefinition.WhenIPressProcedeAsGuest()
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Pending within 10.7632657 seconds
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:B:Given I am on the login page
+Thread#0:T:Not on Login page
+Thread#0:T:done: StepDefinition.GivenIAmOnTheLoginPage() (4.1s)
+Thread#0:B:And Enter an accounts details
+Thread#0:T:No matching step definition found for the step. Use the following code to create one:
+Thread#0:T:        [Given(@"Enter an accounts details")]
+Thread#0:T:public void GivenEnterAnAccountsDetails()
+Thread#0:T:{
+Thread#0:T:    ScenarioContext.Current.Pending();
+Thread#0:T:}
+Thread#0:B:When I press Login
+Thread#0:T:No matching step definition found for the step. Use the following code to create one:
+Thread#0:T:        [When(@"I press Login")]
+Thread#0:T:public void WhenIPressLogin()
+Thread#0:T:{
+Thread#0:T:    ScenarioContext.Current.Pending();
+Thread#0:T:}
+Thread#0:B:Then the lobby page should load
+Thread#0:T:skipped because of previous errors
+Thread#0:T:Pending: No matching step definition found for one or more steps.
+Thread#0:T:using System;
+Thread#0:T:using TechTalk.SpecFlow;
+Thread#0:T:namespace MyNamespace
+Thread#0:T:{
+Thread#0:T:    [Binding]
+Thread#0:T:    public class StepDefinitions
+Thread#0:T:    {
+Thread#0:T:        [Given(@"Enter an accounts details")]
+Thread#0:T:public void GivenEnterAnAccountsDetails()
+Thread#0:T:{
+Thread#0:T:    ScenarioContext.Current.Pending();
+Thread#0:T:}
+Thread#0:T:        [When(@"I press Login")]
+Thread#0:T:public void WhenIPressLogin()
+Thread#0:T:{
+Thread#0:T:    ScenarioContext.Current.Pending();
+Thread#0:T:}
+Thread#0:T:    }
+Thread#0:T:}
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #5/0 is finished on thread #0 as Pending within 4.2651174 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 2
+Succeeded: 0
+Ignored: 0
+Pending: 2
+Skipped: 0
+Failed: 0

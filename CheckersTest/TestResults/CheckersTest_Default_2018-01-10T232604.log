@@ -1,0 +1,60 @@
+﻿2018-01-10T23:24:09.8059191+00:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-01-10T23:24:09.8794715+00:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-01-10T23:24:09.8799724+00:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Lobb\Desktop\Checkers\CheckersTest\bin\Debug\CheckersTest.dll
+2018-01-10T23:24:09.8804730+00:00;VSTestExecutionThread;Info;Profile: Default
+2018-01-10T23:24:16.9952263+00:00;VSTestExecutionThread;Info;Discovering target: Default
+2018-01-10T23:24:16.9962172+00:00;VSTestExecutionThread;Info;Discovering tests from assembly: C:\Users\Lobb\Desktop\Checkers\CheckersTest\bin\Debug\CheckersTest.dll
+2018-01-10T23:24:38.3253713+00:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\Lobb\Desktop\Checkers\CheckersTest\TestResults\CheckersTest_Default_2018-01-10T232409.log
+2018-01-10T23:24:38.3268722+00:00;VSTestExecutionThread;Info;SpecFlow+Runner execution finished
+2018-01-10T23:26:04.5493925+00:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-01-10T23:26:04.5639024+00:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-01-10T23:26:04.5644027+00:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Lobb\Desktop\Checkers\CheckersTest\bin\Debug\CheckersTest.dll
+2018-01-10T23:26:04.5649033+00:00;VSTestExecutionThread;Info;Profile: Default
+2018-01-10T23:26:17.5688208+00:00;Thread#19;Info;Discovering target: Default
+2018-01-10T23:26:17.5693220+00:00;Thread#19;Info;Discovering tests from assembly: C:\Users\Lobb\Desktop\Checkers\CheckersTest\bin\Debug\CheckersTest.dll
+Appdomain Disposed
+Test Suite Dump
+#0: CheckersTest/Default - 
+#1: Default - 
+#2: CheckersTest - 
+#3: SpecFlowFeatureLogin - 
+#4: Guest Login - TestAssembly:CheckersTest/Feature:SpecFlowFeatureLogin/Scenario:Guest+Login
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for CheckersTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Lobb\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.6.3\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I am on the login page
+Thread#0:T:data:,
+Thread#0:T:Not on Login page
+Thread#0:T:done: StepDefinition.GivenIAmOnTheLoginPage() (3.6s)
+Thread#0:B:When I press procede as guest
+Thread#0:T:pending: StepDefinition.WhenIPressProcedeAsGuest()
+Thread#0:B:Then the lobby page should load
+Thread#0:T:skipped because of previous errors
+Thread#0:T:Pending: One or more step definitions are not implemented yet.
+Thread#0:T:  StepDefinition.WhenIPressProcedeAsGuest()
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #4/0 is finished on thread #0 as Pending within 3.7572033 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 0
+Ignored: 0
+Pending: 1
+Skipped: 0
+Failed: 0
