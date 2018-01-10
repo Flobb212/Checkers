@@ -1,0 +1,52 @@
+<link rel="stylesheet" type="text/css" href="checkers.css">
+<script type="text/javascript" src="checkers.js"></script>
+<script type="text/javascript" src="profile.js"></script>
+
+<html>
+<header>
+  <div class='title'>Checkers</div>
+</header>
+
+<body>
+  <main>
+
+    <div class='guestLogin'>
+      <p><u>New here? Create an account!</u></p>
+
+      <label>Username: </label>
+      <label>Password:</label>
+
+      <form name = "signUpForm">
+        <input id="newUsername" type="text"></input>
+        <input id="newPassword" type="text"></input>
+        <button id="signUpButton" type="reset" onClick="signUp(this.form)">Sign up</button>
+      </form>
+
+      <u>Or alternatively, stay as a guest</u>
+      <button id="guestButton" onClick="guestLogin()">Proceed as guest</button>
+    </div>
+
+
+    <div class='accountLogin'>
+      <u>Have an account? Sign in!</u></th>
+
+      <label>Username:</label>
+      <label>Password:</label>
+
+      <form name = "memberLoginForm">
+        <input id="oldUsername" type="text"></input>
+        <input id="oldPassword" type="text"></input>
+        <button id="loginButton" type="reset" onclick="memberLogin(this.form)">Login</button>
+      </form>
+
+      <div id="AJAXCall">
+        <p>Hi I'm text</p>
+        <button id="AJAXButton" onclick="doAJAX('AJAX.txt')">Compulsory AJAX call</button>
+      </div>
+
+    </div>
+
+  </main>
+</body>
+
+<html>
