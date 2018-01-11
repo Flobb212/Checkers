@@ -93,6 +93,8 @@ function doAJAX(file)
     // 4 means request finished and 200 means everything is correct
     if (this.readyState == 4 && this.status == 200)
     {
+      // Works through node.js and localhost
+      // However not on AWS server
       document.getElementById("AJAXCall").innerHTML = call.responseText;
     }
   };
