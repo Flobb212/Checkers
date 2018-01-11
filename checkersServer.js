@@ -8,6 +8,7 @@ extensions =
 	".html"  : "text/html",
 	".css"   : "text/css",
 	".js"    : "application/javascript",
+	".txt"	 : "text/txt",
 	".png"   : "image/png"
 };
 

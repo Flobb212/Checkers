@@ -11,12 +11,13 @@ namespace CheckersTest
     [Binding]
     public sealed class StepDefinition
     {
-        IWebDriver thisDriver = new ChromeDriver();       
+        IWebDriver thisDriver = new ChromeDriver();
 
+        //First Scenario
         [Given("I am on the login page")]
         public void GivenIAmOnTheLoginPage()
         {
-            thisDriver.Url = "file:///C:/Users/Lobb/Desktop/Checkers/login.html";
+            thisDriver.Url = "localhost";
 
             if (thisDriver.FindElement(By.Id("newUsername")).Displayed == true)
             {
@@ -47,6 +48,49 @@ namespace CheckersTest
             else
             {
                 Console.WriteLine("Not on Lobby page");
+            }
+        }
+
+        //Second Scenario
+        [When("I enter an accounts details")]
+        public void GivenIEnterAnAccountsDetails()
+        {
+            var usr = "Derek123";
+            var pass = "ham";            
+        }
+
+        [Then("my details should be in lobby page")]
+        public void ThenMyDetailsShouldBeInLobbyPage()
+        {
+            if (thisDriver.FindElement(By.Id("lobbyUser")).Text == "Derek123")
+            {
+                Console.WriteLine("Login successful");
+            }
+            else
+            {
+                Console.WriteLine("Login failed");
+            }
+        }
+
+        //Third Scenario
+        [When("I press AJAX button")]
+        public void WhenIPressAJAXButton()
+        {
+            var button = thisDriver.FindElement(By.Id("AJAXButton"));
+
+            button.Click();
+        }
+
+        [Then("the text should change")]
+        public void ThenTheTextShouldChange()
+        {
+            if (thisDriver.FindElement(By.Id("AJAXCall")).Text == "This is the text that is called by AJAX!")
+            {
+                Console.WriteLine("AJAX successful");
+            }
+            else
+            {
+                Console.WriteLine("AJAX failed");
             }
         }
     }

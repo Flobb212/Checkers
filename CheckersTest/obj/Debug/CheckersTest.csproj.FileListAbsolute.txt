@@ -17,3 +17,22 @@ C:\Users\Lobb\Desktop\Checkers\CheckersTest\bin\Debug\WebDriver.Support.xml
 C:\Users\Lobb\Desktop\Checkers\CheckersTest\obj\Debug\CheckersTest.csprojResolveAssemblyReference.cache
 C:\Users\Lobb\Desktop\Checkers\CheckersTest\obj\Debug\CheckersTest.dll
 C:\Users\Lobb\Desktop\Checkers\CheckersTest\obj\Debug\CheckersTest.pdb
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\Default.srprofile
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\CheckersTest.dll.config
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\CheckersTest.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\CheckersTest.pdb
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\nunit.framework.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\SpecRun.SpecFlowPlugin.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\TechTalk.SpecRun.Common.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\TechTalk.SpecRun.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\WebDriver.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\WebDriver.Support.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\nunit.framework.xml
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\WebDriver.xml
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\bin\Debug\WebDriver.Support.xml
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\obj\Debug\CheckersTest.csprojResolveAssemblyReference.cache
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\obj\Debug\CheckersTest.dll
+C:\Users\Tom Fletcher-Lobb\Documents\GitHub\Checkers\CheckersTest\obj\Debug\CheckersTest.pdb
